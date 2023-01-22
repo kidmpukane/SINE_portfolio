@@ -5,20 +5,23 @@ const About = () => {
     {
       id: 1,
       background:
-        "https://images.unsplash.com/photo-1614531353349-201a01510e85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        "https://media.tenor.com/bQCHJwgCNuMAAAAC/kitten-cat.gif",
       source: "https://unsplash.com/photos/x0cWGN63b74",
       heading: "About Me",
       description:
-        "Lorem ipsum dolor sit amet. Est unde veritatis et architecto voluptas eos consequatur enim in accusantium iusto. Non itaque architecto ea soluta commodi ab iste eligendi sit quas itaque sit dignissimos voluptas id consequuntur. Qui iusto libero aut voluptatem ratione et atque maxime qui quia fugiat qui assumenda veritatis. Qui impedit illo ad quibusdam iusto non totam inventore non voluptatem earum et ipsum commodi. Et vero quisquam nam aliquid alias eos voluptas optio non quia voluptate rem omnis itaque sed omnis consequatur aut molestiae provident. Ad nemo sunt ea perferendis enim aut consequatur consequuntur quo veritatis recusandae nam unde consequatur ad voluptatem deleniti non deserunt autem. Et unde voluptas qui Quis minima 33 recusandae iusto. Nam internos perspiciatis sed vitae mollitia hic autem aspernatur hic odio officiis.Ut totam quia in officiis totam sed obcaecati iusto et galisum possimus qui omnis voluptatem. Qui error galisum vel doloremque soluta eos aliquam nisi est nulla internos ex omnis voluptatum est fugit enim a atque obcaecati.",
+        "I am a junior full stack developer, with two years worth of experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development. I consider myself a forever student, eager to both learn and build on my foundations, and I stay in tune with the latest web development trends through continued coursework.",
+      stacks: "HTML, CSS, Javascript, React Js, React Native, Node Js, Express Js, Python, Django, MongoDB, mySQL, postgresSQL",
+      tools: "Git, GitHub, Postman, Android Studio, Figma,  Graphic Designer, UI/UX designer",
+      traits: "Hardworking, Good Communicator, Strong willingness to learn, Team player, Self motivated, Proactive",
       details: {
         name_title: ["NAME"],
-        name: ["Mustache Cashstash"],
-        age: ["AGE"],
-        age_number: ["89"],
+        name: ["SINETHEMBA ZWANE"],
+        age: ["TITLE"],
+        age_number: ["JUNIOR FULLSTACK DEVELOPER"],
         phone_number: ["PHONE NUMBER"],
-        number: ["080 0055 555"],
+        number: ["084 957 1804"],
         email: ["EMAIL"],
-        address: ["mustache@gmail.com"],
+        address: ["njabulozwane25@gmail.com"],
       },
     },
   ];
@@ -37,18 +40,18 @@ const About = () => {
             </div>
             <div className="about--container_info">
               <div className="about--text_section">
-                <svg
+                <svg 
+                  width="675" 
+                  height="97" 
                   className="about-heading"
                   style={{}}
-                  viewBox="0 0 127 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.52557 18H0.571023L6.59659 0.545454H11.3523L17.3693 18H13.4148L9.04261 4.53409H8.90625L4.52557 18ZM4.27841 11.1392H13.6193V14.0199H4.27841V11.1392ZM19.4702 18V0.545454H26.4588C27.7429 0.545454 28.8139 0.735795 29.6719 1.11648C30.5298 1.49716 31.1747 2.02557 31.6065 2.7017C32.0384 3.37216 32.2543 4.14489 32.2543 5.01989C32.2543 5.7017 32.1179 6.30114 31.8452 6.81818C31.5724 7.32955 31.1974 7.75 30.7202 8.07955C30.2486 8.40341 29.7088 8.63352 29.1009 8.76989V8.94034C29.7656 8.96875 30.3878 9.15625 30.9673 9.50284C31.5526 9.84943 32.027 10.3352 32.3906 10.9602C32.7543 11.5795 32.9361 12.3182 32.9361 13.1761C32.9361 14.1023 32.706 14.929 32.2457 15.6562C31.7912 16.3778 31.1179 16.9489 30.2259 17.3693C29.3338 17.7898 28.2344 18 26.9276 18H19.4702ZM23.1605 14.983H26.169C27.1974 14.983 27.9474 14.7869 28.419 14.3949C28.8906 13.9972 29.1264 13.4687 29.1264 12.8097C29.1264 12.3267 29.0099 11.9006 28.777 11.5312C28.544 11.1619 28.2116 10.8722 27.7798 10.6619C27.3537 10.4517 26.8452 10.3466 26.2543 10.3466H23.1605V14.983ZM23.1605 7.84943H25.8963C26.402 7.84943 26.8509 7.76136 27.2429 7.58523C27.6406 7.40341 27.9531 7.14773 28.1804 6.81818C28.4134 6.48864 28.5298 6.09375 28.5298 5.63352C28.5298 5.00284 28.3054 4.49432 27.8565 4.10795C27.4134 3.72159 26.7827 3.52841 25.9645 3.52841H23.1605V7.84943ZM51.3771 9.27273C51.3771 11.1761 51.0163 12.7955 50.2947 14.1307C49.5788 15.4659 48.6016 16.4858 47.3629 17.1903C46.13 17.8892 44.7436 18.2386 43.2038 18.2386C41.6527 18.2386 40.2607 17.8864 39.0277 17.1818C37.7947 16.4773 36.8203 15.4574 36.1044 14.1222C35.3885 12.7869 35.0305 11.1705 35.0305 9.27273C35.0305 7.36932 35.3885 5.75 36.1044 4.41477C36.8203 3.07955 37.7947 2.0625 39.0277 1.36364C40.2607 0.659091 41.6527 0.306818 43.2038 0.306818C44.7436 0.306818 46.13 0.659091 47.3629 1.36364C48.6016 2.0625 49.5788 3.07955 50.2947 4.41477C51.0163 5.75 51.3771 7.36932 51.3771 9.27273ZM47.6357 9.27273C47.6357 8.03977 47.451 7 47.0817 6.15341C46.718 5.30682 46.2038 4.66477 45.5391 4.22727C44.8743 3.78977 44.0959 3.57102 43.2038 3.57102C42.3118 3.57102 41.5334 3.78977 40.8686 4.22727C40.2038 4.66477 39.6868 5.30682 39.3175 6.15341C38.9538 7 38.772 8.03977 38.772 9.27273C38.772 10.5057 38.9538 11.5455 39.3175 12.392C39.6868 13.2386 40.2038 13.8807 40.8686 14.3182C41.5334 14.7557 42.3118 14.9744 43.2038 14.9744C44.0959 14.9744 44.8743 14.7557 45.5391 14.3182C46.2038 13.8807 46.718 13.2386 47.0817 12.392C47.451 11.5455 47.6357 10.5057 47.6357 9.27273ZM64.892 0.545454H68.5824V11.8807C68.5824 13.1534 68.2784 14.267 67.6705 15.2216C67.0682 16.1761 66.2244 16.9205 65.1392 17.4545C64.054 17.983 62.7898 18.2472 61.3466 18.2472C59.8977 18.2472 58.6307 17.983 57.5455 17.4545C56.4602 16.9205 55.6165 16.1761 55.0142 15.2216C54.4119 14.267 54.1108 13.1534 54.1108 11.8807V0.545454H57.8011V11.5653C57.8011 12.2301 57.946 12.821 58.2358 13.3381C58.5313 13.8551 58.946 14.2614 59.4801 14.5568C60.0142 14.8523 60.6364 15 61.3466 15C62.0625 15 62.6847 14.8523 63.2131 14.5568C63.7472 14.2614 64.1591 13.8551 64.4489 13.3381C64.7443 12.821 64.892 12.2301 64.892 11.5653V0.545454ZM70.9538 3.58807V0.545454H85.2891V3.58807H79.9453V18H76.2976V3.58807H70.9538ZM93.2045 0.545454H97.7557L102.562 12.2727H102.767L107.574 0.545454H112.125V18H108.545V6.6392H108.401L103.884 17.9148H101.446L96.929 6.59659H96.7841V18H93.2045V0.545454ZM115.165 18V0.545454H126.927V3.58807H118.856V7.74716H126.322V10.7898H118.856V14.9574H126.961V18H115.165Z"
-                    fill="#D9D9D9"
-                  />
+                  viewBox="0 0 675 97" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.1364 95H0.0454547L32.1818 1.90909H57.5455L89.6364 95H68.5455L45.2273 23.1818H44.5L21.1364 95ZM19.8182 58.4091H69.6364V73.7727H19.8182V58.4091ZM100.841 95V1.90909H138.114C144.962 1.90909 150.674 2.92424 155.25 4.95454C159.826 6.98485 163.265 9.80303 165.568 13.4091C167.871 16.9848 169.023 21.1061 169.023 25.7727C169.023 29.4091 168.295 32.6061 166.841 35.3636C165.386 38.0909 163.386 40.3333 160.841 42.0909C158.326 43.8182 155.447 45.0455 152.205 45.7727V46.6818C155.75 46.8333 159.068 47.8333 162.159 49.6818C165.28 51.5303 167.811 54.1212 169.75 57.4545C171.689 60.7576 172.659 64.697 172.659 69.2727C172.659 74.2121 171.432 78.6212 168.977 82.5C166.553 86.3485 162.962 89.3939 158.205 91.6364C153.447 93.8788 147.583 95 140.614 95H100.841ZM120.523 78.9091H136.568C142.053 78.9091 146.053 77.8636 148.568 75.7727C151.083 73.6515 152.341 70.8333 152.341 67.3182C152.341 64.7424 151.72 62.4697 150.477 60.5C149.235 58.5303 147.462 56.9848 145.159 55.8636C142.886 54.7424 140.174 54.1818 137.023 54.1818H120.523V78.9091ZM120.523 40.8636H135.114C137.811 40.8636 140.205 40.3939 142.295 39.4545C144.417 38.4848 146.083 37.1212 147.295 35.3636C148.538 33.6061 149.159 31.5 149.159 29.0455C149.159 25.6818 147.962 22.9697 145.568 20.9091C143.205 18.8485 139.841 17.8182 135.477 17.8182H120.523V40.8636ZM271.011 48.4545C271.011 58.6061 269.087 67.2424 265.239 74.3636C261.42 81.4848 256.208 86.9242 249.602 90.6818C243.027 94.4091 235.633 96.2727 227.42 96.2727C219.148 96.2727 211.723 94.3939 205.148 90.6364C198.572 86.8788 193.375 81.4394 189.557 74.3182C185.739 67.197 183.83 58.5758 183.83 48.4545C183.83 38.303 185.739 29.6667 189.557 22.5455C193.375 15.4242 198.572 10 205.148 6.27273C211.723 2.51515 219.148 0.63636 227.42 0.63636C235.633 0.63636 243.027 2.51515 249.602 6.27273C256.208 10 261.42 15.4242 265.239 22.5455C269.087 29.6667 271.011 38.303 271.011 48.4545ZM251.057 48.4545C251.057 41.8788 250.072 36.3333 248.102 31.8182C246.163 27.303 243.42 23.8788 239.875 21.5455C236.33 19.2121 232.178 18.0455 227.42 18.0455C222.663 18.0455 218.511 19.2121 214.966 21.5455C211.42 23.8788 208.663 27.303 206.693 31.8182C204.754 36.3333 203.784 41.8788 203.784 48.4545C203.784 55.0303 204.754 60.5758 206.693 65.0909C208.663 69.6061 211.42 73.0303 214.966 75.3636C218.511 77.697 222.663 78.8636 227.42 78.8636C232.178 78.8636 236.33 77.697 239.875 75.3636C243.42 73.0303 246.163 69.6061 248.102 65.0909C250.072 60.5758 251.057 55.0303 251.057 48.4545ZM343.091 1.90909H362.773V62.3636C362.773 69.1515 361.152 75.0909 357.909 80.1818C354.697 85.2727 350.197 89.2424 344.409 92.0909C338.621 94.9091 331.879 96.3182 324.182 96.3182C316.455 96.3182 309.697 94.9091 303.909 92.0909C298.121 89.2424 293.621 85.2727 290.409 80.1818C287.197 75.0909 285.591 69.1515 285.591 62.3636V1.90909H305.273V60.6818C305.273 64.2273 306.045 67.3788 307.591 70.1364C309.167 72.8939 311.379 75.0606 314.227 76.6364C317.076 78.2121 320.394 79 324.182 79C328 79 331.318 78.2121 334.136 76.6364C336.985 75.0606 339.182 72.8939 340.727 70.1364C342.303 67.3788 343.091 64.2273 343.091 60.6818V1.90909ZM375.42 18.1364V1.90909H451.875V18.1364H423.375V95H403.92V18.1364H375.42ZM494.091 1.90909H518.364L544 64.4545H545.091L570.727 1.90909H595V95H575.909V34.4091H575.136L551.045 94.5455H538.045L513.955 34.1818H513.182V95H494.091V1.90909ZM611.216 95V1.90909H673.943V18.1364H630.898V40.3182H670.716V56.5455H630.898V78.7727H674.125V95H611.216Z" fill="#D9D9D9"/>
                 </svg>
+
+
 
                 {/*<h1 className="about-heading">{item.heading}</h1>*/}
                 <p className="about-text">{item.description}</p>
@@ -101,16 +104,16 @@ const About = () => {
             </div>
             <div className="info--boxes" key={item}>
               <div className="box">
-                <h2 className="info--box_heading">INFORMATION</h2>
-                <p className="info--box_content">{item.description}</p>
+                <h2 className="info--box_heading">LANGUAGES & STACKS:</h2>
+                <p className="info--box_content">{item.stacks}</p>
               </div>
               <div className="box--one">
-                <h2 className="info--box_heading">INFORMATION</h2>
-                <p className="info--box_content">{item.description}</p>
+                <h2 className="info--box_heading">TOOLS & ADDITIONAL SKILLS</h2>
+                <p className="info--box_content">{item.tools}</p>
               </div>
               <div className="box--two">
-                <h2 className="info--box_heading">INFORMATION</h2>
-                <p className="info--box_content">{item.description}</p>
+                <h2 className="info--box_heading">TRAITS</h2>
+                <p className="info--box_content">{item.traits}</p>
               </div>
             </div>
           </div>
