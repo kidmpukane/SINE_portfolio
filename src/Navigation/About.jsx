@@ -9,19 +9,19 @@ const About = () => {
       source: "https://unsplash.com/photos/x0cWGN63b74",
       heading: "About Me",
       description:
-        "I am a junior full stack developer, with two years worth of experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development. I consider myself a forever student, eager to both learn and build on my foundations, and I stay in tune with the latest web development trends through continued coursework.",
+        "I am a junior full stack developer, who enjoys learning ad bringing ideas into reality. I am highly motivated and eager to learn. I spend most of my time designing and developing projects, that teach me new technologies or more about computer science as a whole, that's when I am not doing continued course work through reading or online resources.",
       stacks: "HTML, CSS, Javascript, React Js, React Native, Node Js, Express Js, Python, Django, MongoDB, mySQL, postgresSQL",
       tools: "Git, GitHub, Postman, Android Studio, Figma,  Graphic Designer, UI/UX designer",
       traits: "Hardworking, Good Communicator, Strong willingness to learn, Team player, Self motivated, Proactive",
       details: {
         name_title: ["NAME"],
-        name: ["SINETHEMBA ZWANE"],
+        name: ["LWANDISO ZWANE"],
         age: ["TITLE"],
         age_number: ["JUNIOR FULLSTACK DEVELOPER"],
         phone_number: ["PHONE NUMBER"],
-        number: ["084 957 1804"],
+        number: ["062 104 6213"],
         email: ["EMAIL"],
-        address: ["njabulozwane25@gmail.com"],
+        address: ["lwandisozwane91@gmail.com"],
       },
     },
   ];
