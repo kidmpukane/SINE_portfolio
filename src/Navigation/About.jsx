@@ -11,7 +11,7 @@ const About = () => {
       description:
         "I am a junior full stack developer, who enjoys learning ad bringing ideas into reality. I am highly motivated and eager to learn. I spend most of my time designing and developing projects, that teach me new technologies or more about computer science as a whole, that's when I am not doing continued course work through reading or online resources.",
       stacks: "HTML, CSS, Javascript, React Js, React Native, Node Js, Express Js, Python, Django, MongoDB, mySQL, postgresSQL",
-      tools: "Git, GitHub, Postman, Android Studio, Figma,  Graphic Designer, UI/UX designer",
+      tools: "Git, GitHub, Postman, Android Studio, Figma,  Graphic Designer, UI/UX designer, Photo Shop",
       traits: "Hardworking, Good Communicator, Strong willingness to learn, Team player, Self motivated, Proactive",
       details: {
         name_title: ["NAME"],
