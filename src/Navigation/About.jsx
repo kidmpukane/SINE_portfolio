@@ -1,126 +1,153 @@
 import React from "react";
 
-const About = () => {
-  const aboutApi = [
+function About() {
+  const about = [
     {
       id: 1,
-      background:
-        "https://media.tenor.com/bQCHJwgCNuMAAAAC/kitten-cat.gif",
-      source: "https://unsplash.com/photos/x0cWGN63b74",
-      heading: "About Me",
-      description:
-        "I am a junior full stack developer, with two years worth of experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development. I consider myself a forever student, eager to both learn and build on my foundations, and I stay in tune with the latest web development trends through continued coursework.",
-      stacks: "HTML, CSS, Javascript, React Js, React Native, Node Js, Express Js, Python, Django, MongoDB, mySQL, postgresSQL",
-      tools: "Git, GitHub, Postman, Android Studio, Figma,  Graphic Designer, UI/UX designer",
-      traits: "Hardworking, Good Communicator, Strong willingness to learn, Team player, Self motivated, Proactive",
-      details: {
-        name_title: ["NAME"],
-        name: ["SINETHEMBA ZWANE"],
-        age: ["TITLE"],
-        age_number: ["JUNIOR FULLSTACK DEVELOPER"],
-        phone_number: ["PHONE NUMBER"],
-        number: ["084 957 1804"],
-        email: ["EMAIL"],
-        address: ["njabulozwane25@gmail.com"],
+      headingOne: "SINETHEMBA",
+      headingTwo: "ZWANE",
+      aboutImg: {
+        img: "https://images.immediate.co.uk/production/volatile/sites/3/2017/12/yoda-the-empire-strikes-back-28a7558.jpg?resize=620,413",
+      },
+      links: {
+        heading: "GET IN",
+        headingOne: "TOUCH",
+        text: "Hi, my name is Sinethemba, I am a junior fullstack developer from South Africa, with experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development.",
+      },
+      qualification: {
+        text: "I consider myself a 'forever student', eager to both and learn build on my foundations, and I stay in tune with the latest web development trends and technologies through continued coursework.",
       },
     },
   ];
 
   return (
-    <div className="about_container">
-      {aboutApi.map((item) => (
-        <div className="about--container_card" key={item}>
-          <div className="about--section_one">
-            <div className="about--container_imgs">
+    <>
+      {about.map((item) => (
+        <>
+          <div className="about-page-container">
+            <div className="about-heading-container">
+              <h1 className="inter-font-bold about-heading1">
+                {item.headingOne}
+              </h1>
+              <h1 className="inter-font-light about-heading2">
+                {item.headingTwo}
+              </h1>
+            </div>
+
+            <div className="my-image">
               <img
-                alt="Bearded old man"
-                src={item.background}
-                className="about-img"
+                className="profile-image"
+                src={item.aboutImg.img}
+                alt="my-gif"
               />
             </div>
-            <div className="about--container_info">
-              <div className="about--text_section">
-                <svg 
-                  width="675" 
-                  height="97" 
-                  className="about-heading"
-                  style={{}}
-                  viewBox="0 0 675 97" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.1364 95H0.0454547L32.1818 1.90909H57.5455L89.6364 95H68.5455L45.2273 23.1818H44.5L21.1364 95ZM19.8182 58.4091H69.6364V73.7727H19.8182V58.4091ZM100.841 95V1.90909H138.114C144.962 1.90909 150.674 2.92424 155.25 4.95454C159.826 6.98485 163.265 9.80303 165.568 13.4091C167.871 16.9848 169.023 21.1061 169.023 25.7727C169.023 29.4091 168.295 32.6061 166.841 35.3636C165.386 38.0909 163.386 40.3333 160.841 42.0909C158.326 43.8182 155.447 45.0455 152.205 45.7727V46.6818C155.75 46.8333 159.068 47.8333 162.159 49.6818C165.28 51.5303 167.811 54.1212 169.75 57.4545C171.689 60.7576 172.659 64.697 172.659 69.2727C172.659 74.2121 171.432 78.6212 168.977 82.5C166.553 86.3485 162.962 89.3939 158.205 91.6364C153.447 93.8788 147.583 95 140.614 95H100.841ZM120.523 78.9091H136.568C142.053 78.9091 146.053 77.8636 148.568 75.7727C151.083 73.6515 152.341 70.8333 152.341 67.3182C152.341 64.7424 151.72 62.4697 150.477 60.5C149.235 58.5303 147.462 56.9848 145.159 55.8636C142.886 54.7424 140.174 54.1818 137.023 54.1818H120.523V78.9091ZM120.523 40.8636H135.114C137.811 40.8636 140.205 40.3939 142.295 39.4545C144.417 38.4848 146.083 37.1212 147.295 35.3636C148.538 33.6061 149.159 31.5 149.159 29.0455C149.159 25.6818 147.962 22.9697 145.568 20.9091C143.205 18.8485 139.841 17.8182 135.477 17.8182H120.523V40.8636ZM271.011 48.4545C271.011 58.6061 269.087 67.2424 265.239 74.3636C261.42 81.4848 256.208 86.9242 249.602 90.6818C243.027 94.4091 235.633 96.2727 227.42 96.2727C219.148 96.2727 211.723 94.3939 205.148 90.6364C198.572 86.8788 193.375 81.4394 189.557 74.3182C185.739 67.197 183.83 58.5758 183.83 48.4545C183.83 38.303 185.739 29.6667 189.557 22.5455C193.375 15.4242 198.572 10 205.148 6.27273C211.723 2.51515 219.148 0.63636 227.42 0.63636C235.633 0.63636 243.027 2.51515 249.602 6.27273C256.208 10 261.42 15.4242 265.239 22.5455C269.087 29.6667 271.011 38.303 271.011 48.4545ZM251.057 48.4545C251.057 41.8788 250.072 36.3333 248.102 31.8182C246.163 27.303 243.42 23.8788 239.875 21.5455C236.33 19.2121 232.178 18.0455 227.42 18.0455C222.663 18.0455 218.511 19.2121 214.966 21.5455C211.42 23.8788 208.663 27.303 206.693 31.8182C204.754 36.3333 203.784 41.8788 203.784 48.4545C203.784 55.0303 204.754 60.5758 206.693 65.0909C208.663 69.6061 211.42 73.0303 214.966 75.3636C218.511 77.697 222.663 78.8636 227.42 78.8636C232.178 78.8636 236.33 77.697 239.875 75.3636C243.42 73.0303 246.163 69.6061 248.102 65.0909C250.072 60.5758 251.057 55.0303 251.057 48.4545ZM343.091 1.90909H362.773V62.3636C362.773 69.1515 361.152 75.0909 357.909 80.1818C354.697 85.2727 350.197 89.2424 344.409 92.0909C338.621 94.9091 331.879 96.3182 324.182 96.3182C316.455 96.3182 309.697 94.9091 303.909 92.0909C298.121 89.2424 293.621 85.2727 290.409 80.1818C287.197 75.0909 285.591 69.1515 285.591 62.3636V1.90909H305.273V60.6818C305.273 64.2273 306.045 67.3788 307.591 70.1364C309.167 72.8939 311.379 75.0606 314.227 76.6364C317.076 78.2121 320.394 79 324.182 79C328 79 331.318 78.2121 334.136 76.6364C336.985 75.0606 339.182 72.8939 340.727 70.1364C342.303 67.3788 343.091 64.2273 343.091 60.6818V1.90909ZM375.42 18.1364V1.90909H451.875V18.1364H423.375V95H403.92V18.1364H375.42ZM494.091 1.90909H518.364L544 64.4545H545.091L570.727 1.90909H595V95H575.909V34.4091H575.136L551.045 94.5455H538.045L513.955 34.1818H513.182V95H494.091V1.90909ZM611.216 95V1.90909H673.943V18.1364H630.898V40.3182H670.716V56.5455H630.898V78.7727H674.125V95H611.216Z" fill="#D9D9D9"/>
-                </svg>
+            <div className="side-bar">
+              <h1 className="side-bar-header-font-bold">
+                {item.links.heading}
+              </h1>
+              <h1 className="side-bar-header-font-light">
+                {item.links.headingOne}
+              </h1>
+              <span className="side-bar-body-font-light">
+                {item.links.text}
+              </span>
 
-
-
-                {/*<h1 className="about-heading">{item.heading}</h1>*/}
-                <p className="about-text">{item.description}</p>
+              <div className="get-in-touch-button-container">
+                <button className="twitter-button">Twitter</button>
+                <button className="linked-in-button">LinkedIn</button>
+                <button className="git-hub-button">GitHub</button>
+                <button className="ringer-button">Ringer</button>
+                <button className="g-mail-button">Gmail</button>
               </div>
-              <div className="details--container" key={item}>
-                <div className="details--name">
-                  <h2>{item.details.name_title}</h2>
-                  <p className="name">{item.details.name}</p>
-                </div>
-                <div className="details--age">
-                  <h2>{item.details.age}</h2>
-                  <p className="age">{item.details.age_number}</p>
-                </div>
-                <div className="details--number">
-                  <h2>{item.details.phone_number}</h2>
-                  <p className="number">{item.details.number}</p>
-                </div>
-                <div className="details--email">
-                  <h2>{item.details.email}</h2>
-                  <p className="email">{item.details.address}</p>
-                </div>
-              </div>
+
+              <h1 className="side-bar-header-font-bold-2">FULL-STACK</h1>
+              <h1 className="side-bar-header-font-light-2">DEVELOPER</h1>
+
+              <button className="side-bar-button">
+                <span className="side-bar-button-font-bold">Download CV</span>
+              </button>
+            </div>
+            <div className="qualification-section">
+              <h1 className="qualification-header-font-bold">CONTINUOUS</h1>
+              <h1 className="qualification-header-font-light">SELF-STUDY</h1>
+              <span className="qualification-body-font-light">
+                {item.qualification.text}
+              </span>
+              <button className="self-study-button">
+                <span className="qualification-button-font-bold side-bar-button-font-bold">
+                  See More
+                </span>
+              </button>
+            </div>
+
+            <div className="second-heading">
+              <h1 className="inter-font-bold card-header-info card-header-font-bold">
+                COMPETENCIES
+              </h1>
+              <h1 className="inter-font-light card-header-info card-header-font-light">
+                SKILLS & ABILITIES
+              </h1>
             </div>
           </div>
-          <div className="info--boxes_container">
-            <div className="info--boxes_headings">
-              <svg
-                className="info-heading"
-                style={{}}
-                viewBox="0 0 115 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.426136 1.79403V0.272727H7.59375V1.79403H4.92188V9H3.09801V1.79403H0.426136ZM8.77415 9V0.272727H12.2173C12.8764 0.272727 13.4389 0.390625 13.9048 0.62642C14.3736 0.859375 14.7301 1.19034 14.9744 1.61932C15.2216 2.04545 15.3452 2.54687 15.3452 3.12358C15.3452 3.70312 15.2202 4.2017 14.9702 4.61932C14.7202 5.03409 14.358 5.35227 13.8835 5.57386C13.4119 5.79545 12.8409 5.90625 12.1705 5.90625H9.86506V4.4233H11.8722C12.2244 4.4233 12.517 4.375 12.75 4.27841C12.983 4.18182 13.1563 4.03693 13.2699 3.84375C13.3864 3.65057 13.4446 3.41051 13.4446 3.12358C13.4446 2.83381 13.3864 2.58949 13.2699 2.39062C13.1563 2.19176 12.9815 2.04119 12.7457 1.93892C12.5128 1.83381 12.2188 1.78125 11.8636 1.78125H10.6193V9H8.77415ZM13.4872 5.02841L15.6562 9H13.6193L11.4972 5.02841H13.4872ZM18.1534 9H16.1761L19.1889 0.272727H21.5668L24.5753 9H22.598L20.4119 2.26705H20.3438L18.1534 9ZM18.0298 5.5696H22.7003V7.00994H18.0298V5.5696ZM27.4709 0.272727V9H25.6257V0.272727H27.4709ZM28.6566 1.79403V0.272727H35.8242V1.79403H33.1523V9H31.3285V1.79403H28.6566ZM41.739 2.78267C41.7049 2.43892 41.5586 2.17187 41.3001 1.98153C41.0415 1.79119 40.6907 1.69602 40.2475 1.69602C39.9464 1.69602 39.6921 1.73864 39.4847 1.82386C39.2773 1.90625 39.1183 2.02131 39.0075 2.16903C38.8995 2.31676 38.8455 2.48438 38.8455 2.67188C38.8398 2.82812 38.8725 2.96449 38.9435 3.08097C39.0174 3.19744 39.1183 3.2983 39.2461 3.38352C39.3739 3.46591 39.5217 3.53835 39.6893 3.60085C39.8569 3.66051 40.0359 3.71165 40.2262 3.75426L41.0103 3.94176C41.391 4.02699 41.7404 4.14062 42.0586 4.28267C42.3768 4.42472 42.6523 4.59943 42.8853 4.80682C43.1183 5.0142 43.2987 5.25852 43.4265 5.53977C43.5572 5.82102 43.6239 6.14347 43.6268 6.5071C43.6239 7.04119 43.4876 7.50426 43.2177 7.89631C42.9506 8.28551 42.5643 8.58807 42.0586 8.80398C41.5558 9.01705 40.9492 9.12358 40.239 9.12358C39.5344 9.12358 38.9208 9.01562 38.3981 8.79972C37.8782 8.58381 37.4719 8.2642 37.1793 7.84091C36.8896 7.41477 36.7376 6.88778 36.7234 6.25994H38.5089C38.5288 6.55256 38.6126 6.79687 38.7603 6.9929C38.9109 7.18608 39.1112 7.33239 39.3612 7.43182C39.614 7.52841 39.8995 7.5767 40.2177 7.5767C40.5302 7.5767 40.8015 7.53125 41.0316 7.44034C41.2646 7.34943 41.445 7.22301 41.5728 7.06108C41.7006 6.89915 41.7646 6.71307 41.7646 6.50284C41.7646 6.30682 41.7063 6.14205 41.5898 6.00852C41.4762 5.875 41.3086 5.76136 41.087 5.66761C40.8683 5.57386 40.5998 5.48864 40.2816 5.41193L39.3313 5.1733C38.5955 4.99432 38.0146 4.71449 37.5884 4.33381C37.1623 3.95312 36.9506 3.44034 36.9535 2.79545C36.9506 2.26705 37.0913 1.8054 37.3754 1.41051C37.6623 1.01562 38.0558 0.707386 38.5558 0.485795C39.0558 0.264204 39.6239 0.153409 40.2603 0.153409C40.908 0.153409 41.4734 0.264204 41.9563 0.485795C42.4421 0.707386 42.82 1.01562 43.0898 1.41051C43.3597 1.8054 43.4989 2.26278 43.5075 2.78267H41.739ZM50.2873 9.12784C49.685 9.12784 49.1651 9.01989 48.7276 8.80398C48.2901 8.58807 47.9535 8.29545 47.7177 7.92614C47.4847 7.55398 47.3683 7.1392 47.3683 6.68182C47.3683 6.34091 47.4364 6.03835 47.5728 5.77415C47.7092 5.50994 47.8995 5.26705 48.1438 5.04545C48.3881 4.82102 48.6722 4.59801 48.9961 4.37642L50.6879 3.2642C50.9066 3.125 51.0671 2.97869 51.1694 2.82528C51.2717 2.66903 51.3228 2.5 51.3228 2.31818C51.3228 2.14489 51.2532 1.98437 51.114 1.83665C50.9748 1.68892 50.7773 1.61648 50.5217 1.61932C50.3512 1.61932 50.2035 1.65767 50.0785 1.73438C49.9535 1.80824 49.8555 1.90625 49.7844 2.02841C49.7163 2.14773 49.6822 2.28125 49.6822 2.42898C49.6822 2.6108 49.7333 2.79545 49.8356 2.98295C49.9379 3.17045 50.0742 3.36932 50.2447 3.57955C50.4151 3.78693 50.6012 4.01136 50.8029 4.25284L54.9407 9H53.0487L49.5969 5.15625C49.3697 4.89773 49.1424 4.62784 48.9151 4.34659C48.6907 4.0625 48.5032 3.76136 48.3526 3.44318C48.2021 3.12216 48.1268 2.77415 48.1268 2.39915C48.1268 1.97585 48.2248 1.59517 48.4208 1.2571C48.6197 0.919034 48.8981 0.651989 49.256 0.455966C49.614 0.257102 50.0316 0.15767 50.5089 0.15767C50.9748 0.15767 51.3768 0.252841 51.7148 0.443182C52.0558 0.630682 52.3171 0.880682 52.4989 1.19318C52.6836 1.50284 52.7759 1.84375 52.7759 2.21591C52.7759 2.62784 52.6737 3.00142 52.4691 3.33665C52.2674 3.66903 51.9833 3.96733 51.6168 4.23153L49.8356 5.5142C49.5941 5.69034 49.4151 5.87074 49.2987 6.0554C49.185 6.23722 49.1282 6.41193 49.1282 6.57955C49.1282 6.78693 49.1793 6.97301 49.2816 7.13778C49.3839 7.30256 49.5288 7.43324 49.7163 7.52983C49.9038 7.62358 50.1239 7.67045 50.3768 7.67045C50.6836 7.67045 50.9862 7.60085 51.2844 7.46165C51.5856 7.3196 51.8583 7.11932 52.1026 6.8608C52.3498 6.59943 52.5472 6.28977 52.695 5.93182C52.8427 5.57386 52.9165 5.17756 52.9165 4.7429H54.4208C54.4208 5.27699 54.3626 5.75852 54.2461 6.1875C54.1296 6.61364 53.9677 6.9858 53.7603 7.30398C53.5529 7.61932 53.3157 7.87784 53.0487 8.07955C52.9634 8.13352 52.881 8.18466 52.8015 8.23295C52.7219 8.28125 52.6396 8.33239 52.5543 8.38636C52.2305 8.64773 51.8683 8.83665 51.4677 8.95312C51.07 9.0696 50.6765 9.12784 50.2873 9.12784ZM60.0128 9H58.0355L61.0483 0.272727H63.4261L66.4347 9H64.4574L62.2713 2.26705H62.2031L60.0128 9ZM59.8892 5.5696H64.5597V7.00994H59.8892V5.5696ZM67.4851 9V0.272727H70.9794C71.6214 0.272727 72.157 0.367898 72.5859 0.558239C73.0149 0.74858 73.3374 1.01278 73.5533 1.35085C73.7692 1.68608 73.8771 2.07244 73.8771 2.50994C73.8771 2.85085 73.8089 3.15057 73.6726 3.40909C73.5362 3.66477 73.3487 3.875 73.1101 4.03977C72.8743 4.2017 72.6044 4.31676 72.3004 4.38494V4.47017C72.6328 4.48437 72.9439 4.57812 73.2337 4.75142C73.5263 4.92472 73.7635 5.16761 73.9453 5.48011C74.1271 5.78977 74.218 6.15909 74.218 6.58807C74.218 7.05114 74.103 7.46449 73.8729 7.82812C73.6456 8.18892 73.3089 8.47443 72.8629 8.68466C72.4169 8.89489 71.8672 9 71.2138 9H67.4851ZM69.3303 7.49148H70.8345C71.3487 7.49148 71.7237 7.39347 71.9595 7.19744C72.1953 6.99858 72.3132 6.73437 72.3132 6.40483C72.3132 6.16335 72.255 5.95028 72.1385 5.76562C72.022 5.58097 71.8558 5.43608 71.6399 5.33097C71.4268 5.22585 71.1726 5.1733 70.8771 5.1733H69.3303V7.49148ZM69.3303 3.92472H70.6982C70.951 3.92472 71.1754 3.88068 71.3714 3.79261C71.5703 3.7017 71.7266 3.57386 71.8402 3.40909C71.9567 3.24432 72.0149 3.04688 72.0149 2.81676C72.0149 2.50142 71.9027 2.24716 71.6783 2.05398C71.4567 1.8608 71.1413 1.7642 70.7322 1.7642H69.3303V3.92472ZM77.2638 0.272727V9H75.4187V0.272727H77.2638ZM78.782 9V0.272727H80.6271V7.47869H84.3686V9H78.782ZM87.4357 0.272727V9H85.5906V0.272727H87.4357ZM88.6214 1.79403V0.272727H95.7891V1.79403H93.1172V9H91.2933V1.79403H88.6214ZM98.8146 0.272727V9H96.9695V0.272727H98.8146ZM100.333 9V0.272727H106.213V1.79403H102.178V3.87358H105.911V5.39489H102.178V7.47869H106.23V9H100.333ZM112.415 2.78267C112.381 2.43892 112.234 2.17187 111.976 1.98153C111.717 1.79119 111.366 1.69602 110.923 1.69602C110.622 1.69602 110.368 1.73864 110.161 1.82386C109.953 1.90625 109.794 2.02131 109.683 2.16903C109.575 2.31676 109.521 2.48438 109.521 2.67188C109.516 2.82812 109.548 2.96449 109.619 3.08097C109.693 3.19744 109.794 3.2983 109.922 3.38352C110.05 3.46591 110.197 3.53835 110.365 3.60085C110.533 3.66051 110.712 3.71165 110.902 3.75426L111.686 3.94176C112.067 4.02699 112.416 4.14062 112.734 4.28267C113.053 4.42472 113.328 4.59943 113.561 4.80682C113.794 5.0142 113.974 5.25852 114.102 5.53977C114.233 5.82102 114.3 6.14347 114.303 6.5071C114.3 7.04119 114.163 7.50426 113.893 7.89631C113.626 8.28551 113.24 8.58807 112.734 8.80398C112.232 9.01705 111.625 9.12358 110.915 9.12358C110.21 9.12358 109.597 9.01562 109.074 8.79972C108.554 8.58381 108.148 8.2642 107.855 7.84091C107.565 7.41477 107.413 6.88778 107.399 6.25994H109.185C109.205 6.55256 109.288 6.79687 109.436 6.9929C109.587 7.18608 109.787 7.33239 110.037 7.43182C110.29 7.52841 110.575 7.5767 110.893 7.5767C111.206 7.5767 111.477 7.53125 111.707 7.44034C111.94 7.34943 112.121 7.22301 112.249 7.06108C112.376 6.89915 112.44 6.71307 112.44 6.50284C112.44 6.30682 112.382 6.14205 112.266 6.00852C112.152 5.875 111.984 5.76136 111.763 5.66761C111.544 5.57386 111.276 5.48864 110.957 5.41193L110.007 5.1733C109.271 4.99432 108.69 4.71449 108.264 4.33381C107.838 3.95312 107.626 3.44034 107.629 2.79545C107.626 2.26705 107.767 1.8054 108.051 1.41051C108.338 1.01562 108.732 0.707386 109.232 0.485795C109.732 0.264204 110.3 0.153409 110.936 0.153409C111.584 0.153409 112.149 0.264204 112.632 0.485795C113.118 0.707386 113.496 1.01562 113.766 1.41051C114.036 1.8054 114.175 2.26278 114.183 2.78267H112.415Z"
-                  fill="#D9D9D9"
-                />
-              </svg>
 
-              {/*<h2 className="info--heading">TRAITS & ABILITIES</h2>*/}
-              <svg
-                className="info-heading_underline"
-                style={{}}
-                viewBox="0 0 116 2"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="116" height="2" rx="1" fill="#D9D9D9" />
-              </svg>
+          <div className="more-info-cards">
+            <div className="more-info-card">
+              <h1 className="inter-font-bold card-heading-info card-font-bold">
+                TECH
+              </h1>
+              <h1 className="inter-font-light card-heading-info card-font-light">
+                STACKS
+              </h1>
+              <li className="list-item-inter-font-bold">HTML/CSS</li>
+              <li className="list-item-inter-font-bold">JavaScript</li>
+              <li className="list-item-inter-font-bold">React.JS</li>
+              <li className="list-item-inter-font-bold">React Native</li>
+              <li className="list-item-inter-font-bold">Express.JS</li>
+              <li className="list-item-inter-font-bold">Node.JS</li>
+              <li className="list-item-inter-font-bold">Python</li>
+              <li className="list-item-inter-font-bold">Django</li>
+              <li className="list-item-inter-font-bold">MongoDB</li>
+              <li className="list-item-inter-font-bold">mySQL</li>
             </div>
-            <div className="info--boxes" key={item}>
-              <div className="box">
-                <h2 className="info--box_heading">LANGUAGES & STACKS:</h2>
-                <p className="info--box_content">{item.stacks}</p>
-              </div>
-              <div className="box--one">
-                <h2 className="info--box_heading">TOOLS & ADDITIONAL SKILLS</h2>
-                <p className="info--box_content">{item.tools}</p>
-              </div>
-              <div className="box--two">
-                <h2 className="info--box_heading">TRAITS</h2>
-                <p className="info--box_content">{item.traits}</p>
-              </div>
+
+            <div className="more-info-card">
+              <h1 className="inter-font-bold card-heading-info card-font-bold">
+                TOOLS &
+              </h1>
+              <h1 className="inter-font-light card-heading-info card-font-light">
+                OTHER SKILLS
+              </h1>
+              <li className="list-item-inter-font-bold">Git</li>
+              <li className="list-item-inter-font-bold">GitHub</li>
+              <li className="list-item-inter-font-bold">Postman</li>
+              <li className="list-item-inter-font-bold">Android Studio</li>
+              <li className="list-item-inter-font-bold">Figma</li>
+              <li className="list-item-inter-font-bold">Graphic Designer</li>
+              <li className="list-item-inter-font-bold">UI/UX designer</li>
+              <li className="list-item-inter-font-bold">Photo Shop</li>
+            </div>
+
+            <div className="more-info-card">
+              <h1 className="inter-font-bold card-heading-info card-font-bold">
+                TRAITS &
+              </h1>
+              <h1 className="inter-font-light card-heading-info card-font-light">
+                SOFT SKILLS
+              </h1>
+              <li className="list-item-inter-font-bold">Hardworking</li>
+              <li className="list-item-inter-font-bold">Good Communicator</li>
+              <li className="list-item-inter-font-bold">Proactive</li>
+              <li className="list-item-inter-font-bold">Self Motivated</li>
+              <li className="list-item-inter-font-bold">Progress Driven</li>
+              <li className="list-item-inter-font-bold">Forever Student</li>
+              <li className="list-item-inter-font-bold">Creative</li>
+              <li className="list-item-inter-font-bold">Team Player</li>
             </div>
           </div>
-        </div>
+        </>
       ))}
-    </div>
+    </>
   );
-};
+}
 
 export default About;
