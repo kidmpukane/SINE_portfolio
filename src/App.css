@@ -7,9 +7,108 @@
   }
 
   body{
-        background-color: #161616;
+        background-image: linear-gradient(to right, #161616 0%, rgb(9, 9, 9) 100%);
+        scrollbar-width: thin;
   }
 
+  #dark {
+    background-color: linear-gradient(to right, #161616 0%, rgb(9, 9, 9) 100%);
+  }
+
+  #light {
+    background-color: #00C0FF;
+  }
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.switch-container{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-switch .switch {
+  --background: #202020;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.toggle-switch .switch::before {
+  position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+}
+
+.toggle-switch input[type="checkbox"]:checked+.switch::before {
+  transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+.toggle-switch input[type="checkbox"]:checked+.switch {
+  background-color: #202020;
+}
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+
+
+    body::-webkit-scrollbar {
+      width: 1rem;
+      
+    }
+  
+    body::-webkit-scrollbar-track {
+      background-color: black;
+      border-radius: 20rem;
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background-color: #D1D1D1;
+      border-radius: 20rem;
+      outline: none;
+    }
 /*------------------------COLOURS------------------------*/  
 
 :root {
@@ -93,7 +192,7 @@
 /*-------------HOVER ANIMATIONS-----------------*/
 
 
-h1:hover {
+.home-heading1:hover {
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
@@ -108,6 +207,24 @@ h1:hover {
     -webkit-mask-position: -50%;
   }
 }
+
+.home-heading2:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
 
 /*--------------HEADING-----------------------*/
 
@@ -136,6 +253,15 @@ h1:hover {
 
  /* ---- About Section ----- */
 
+.about-heading-1{
+  font-size: 5vw;
+}
+
+.about-heading-2{
+  font-size: 10vw;
+  margin-top: -5vw;
+}
+
  .about-page-container {
 
   display: grid;
@@ -148,22 +274,22 @@ h1:hover {
 }
 
 .my-image{
-  background-color: #FFFFFF;
+  background-color: black;
   padding: 1vw;
-  border-radius: 3rem;
+  border-radius: 1rem;
   
 }
 
 .profile-image{
     height: 100%;
     width: 100%;
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .side-bar{
-  background-color: #FFFFFF;
+  background-color: black;
   padding: 5vw;
-  border-radius: 3rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,7 +302,7 @@ h1:hover {
   font-weight: 700;
   font-size: 10vw;
   margin-left: -45.5vw;
-  color: #161616;
+  color: #D1D1D1;
 
 
 }
@@ -202,7 +328,7 @@ h1:hover {
 .twitter-button {
   width: 14vw;
   height: 18vw;
-  border-radius: 4vw;
+  border-radius: 1.5vw;
   border: none;
   background: var(--custom-baby-blue);
   cursor: pointer;
@@ -213,7 +339,7 @@ h1:hover {
   margin-left: 2vw;
   width: 14vw;
   height: 18vw;
-  border-radius: 4vw;
+  border-radius:1.5vw;
   border: none;
   background: var(--custom-green);
   cursor: pointer;
@@ -224,7 +350,7 @@ h1:hover {
   margin-left: 2vw;
   width: 14vw;
   height: 18vw;
-  border-radius: 4vw;
+  border-radius: 1.5vw;
   border: none;
   background: var(--custom-yellow);
   cursor: pointer;
@@ -235,7 +361,7 @@ h1:hover {
   margin-left: 2vw;
   width: 14vw;
   height: 18vw;
-  border-radius: 4vw;
+  border-radius: 1.5vw;
   border: none;
   background: var(--custom-orange);
   cursor: pointer;
@@ -246,7 +372,7 @@ h1:hover {
   margin-left: 2vw;
   width: 14vw;
   height: 18vw;
-  border-radius: 4vw;
+  border-radius: 1.5vw;
   border: none;
   background: var(--custom-red);
   cursor: pointer;
@@ -259,7 +385,7 @@ h1:hover {
   font-size: 9vw;
   margin-top: -8vw;
   margin-left: -46.5vw;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -269,7 +395,7 @@ h1:hover {
   font-weight: 700;
   font-size: 7.2vw;
   margin-left: -32.5vw;
-  color: #161616;
+  color: #D1D1D1;
 
 
 }
@@ -280,7 +406,7 @@ h1:hover {
   font-size: 8vw;
   margin-top: -5vw;
   margin-left: -33.5vw;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -290,7 +416,7 @@ h1:hover {
   font-size: 5vw;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -301,9 +427,9 @@ h1:hover {
   width: 100%;
   border-radius: 10vw;
   border: none;
-  background: #161616;
+  background: #D1D1D1;
   cursor: pointer;
-  color: white;
+  color: black;
 
 }
 .side-bar-button-font-bold  {
@@ -311,9 +437,9 @@ h1:hover {
 }
 
 .qualification-section{
-  background-color: #FFFFFF;
+  background-color: black;
   padding: 5vw;
-  border-radius: 3rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,7 +450,7 @@ h1:hover {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 7vw;
-  color: #161616;
+  color: #D1D1D1;
   margin-left: -30vw;
 
 }
@@ -335,7 +461,7 @@ h1:hover {
   font-size: 8vw;
   margin-top: -5vw;
   margin-left: -30vw;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -345,7 +471,7 @@ h1:hover {
   font-size: 5vw;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -356,9 +482,9 @@ h1:hover {
   width: 100%;
   border-radius: 10vw;
   border: none;
-  background: #161616;
+  background: #D1D1D1;
   cursor: pointer;
-  color: white;
+  color: black;
 
 }
 
@@ -413,13 +539,13 @@ h1:hover {
 .list-item-inter-font-bold{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: #000;
+    color: #D1D1D1;
 }
 
 .card-heading-info{
   column-span: all;
   font-size: 10vw;
-  color: #161616;
+  color: #D1D1D1;
 }
 
 .card-font-bold{
@@ -435,8 +561,8 @@ h1:hover {
 }
 
 .more-info-card {
-  background-color: #FFFFFF;
-  border-radius: 3rem;
+  background-color: black;
+  border-radius: 1rem;
   column-count: 2;
   column-gap: 8vw;
   padding: 6vw;
@@ -649,10 +775,21 @@ h1:hover {
     font-size: 20px;
   }
 
-  .about-heading1{
-    font-size: 5vw;
-  }
-  
+    button:hover {
+      background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+      animation: slidebg 10s linear infinite;
+    }
+    
+    button:hover{
+      padding: 1rem;
+      transition: margin 0.2s ease-in-out;
+    }
+
+    @keyframes slidebg {
+      to {
+        background-position: 20vw;
+      }
+    }
   .about-heading2{
     font-size: 4vw;
     margin-top :-4vw; 
@@ -666,6 +803,10 @@ h1:hover {
 
 
  /* ----------------------------- About Section ------------------------ */
+
+ .about-heading-1:hover {
+   color: linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+ }
 
   .about-page-container {
 
@@ -687,24 +828,24 @@ h1:hover {
   }
 
   .my-image{
-    background-color: #FFFFFF;
+    background-color: black;
     grid-column: 1 / 2;
     padding: 0.2vw;
-    border-radius: 3rem;
+    border-radius: 1rem;
     
   }
 
     .profile-image {
       height: 100%;
       width: 30vw;
-      border-radius: 3rem;
+      border-radius: 1rem;
     }
 
   .side-bar{
-    background-color: #FFFFFF;
+    background-color: black;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
-    border-radius: 3rem;
+    border-radius: 1rem;
     padding: 2vw;
 
     display: flex;
@@ -719,7 +860,7 @@ h1:hover {
   font-weight: 700;
   font-size: 6vw;
   margin-left: -22.5vw;
-  color: #161616;
+  color: #D1D1D1;
 
 }
 
@@ -729,7 +870,7 @@ h1:hover {
   font-size: 6vw;
   margin-top: -5.5vw;
   margin-left: -21.2vw;
-  color: black;
+  color: #D1D1D1;
 
 }
 .get-in-touch-button-container  {
@@ -802,7 +943,7 @@ h1:hover {
   font-weight: 700;
   font-size: 4vw;
   margin-left: -17vw;
-  color: #161616;
+  color: #D1D1D1;
 
 
 }
@@ -813,7 +954,7 @@ h1:hover {
   font-size: 4.6vw;
   margin-top: -3vw;
   margin-left: -16.8vw;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -823,7 +964,7 @@ h1:hover {
   font-size: 1.5vw;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -834,9 +975,9 @@ h1:hover {
   width: 100%;
   border-radius: 10vw;
   border: none;
-  background: #161616;
+  background: #D1D1D1;
   cursor: pointer;
-  color: white;
+  color: black;
 
 }
 
@@ -846,12 +987,12 @@ h1:hover {
 
 
 .qualification-section {
-  background-color: #FFFFFF;
+  background-color: black;
   padding-top: 1vw;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-bottom: 0vw;
-  border-radius: 3rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -863,7 +1004,7 @@ h1:hover {
   font-weight: 700;
   font-size: 3vw;
   margin-left: -5.5vw;
-  color: #161616;
+  color: #D1D1D1;
 
 
 }
@@ -875,7 +1016,7 @@ h1:hover {
   margin-top: 1vw;
   margin-left: -5vw;
   margin-top: -2vw;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -885,7 +1026,7 @@ h1:hover {
   font-size: 1.5vw;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: black;
+  color: #D1D1D1;
 
 }
 
@@ -895,9 +1036,9 @@ h1:hover {
   width: 100%;
   border-radius: 10vw;
   border: none;
-  background: #161616;
+  background: #D1D1D1;
   cursor: pointer;
-  color: white;
+  color: black;
 
   display: flex;
   flex-direction: column;
@@ -960,8 +1101,8 @@ h1:hover {
 
   }
 .more-info-card {
-  background-color: #FFFFFF;
-  border-radius: 2rem;
+  background-color: black;
+  border-radius: 1rem;
   column-count: 2;
   column-gap: 1vw;
   padding: 3vw;
