@@ -29,7 +29,14 @@ function Projects() {
             <Zoom>
               <div className="button-and-date">
                 <span className="date-style space-font">25/06/2023:</span>
-                <button className="button-top-right space-font">
+                <button
+                  onClick={() => {
+                    window.open(
+                      "https://twitter.com/SineZwa97?t=SWBvRj7-kVc-0-8jmzNzVA&s=08 "
+                    );
+                  }}
+                  className="button-top-right space-font"
+                >
                   Follow Progress
                 </button>
               </div>

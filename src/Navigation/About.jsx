@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import Zoom from "react-reveal/Zoom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import profilePic from "../assets/WhatsApp Image 2023-02-25 at 21.25.52.jpg";
 
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -35,7 +36,7 @@ function About() {
       headingOne: "SINETHEMBA",
       headingTwo: "ZWANE",
       aboutImg: {
-        img: "https://images.immediate.co.uk/production/volatile/sites/3/2017/12/yoda-the-empire-strikes-back-28a7558.jpg?resize=620,413",
+        img: profilePic,
       },
       links: {
         heading: "GET IN",
