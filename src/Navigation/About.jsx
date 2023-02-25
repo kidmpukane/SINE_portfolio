@@ -9,7 +9,22 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 
+import { useNavigate } from "react-router-dom";
+
+const MY_CV = "http://localhost:3000/CV_2022.pdf";
+
 function About() {
+  const navigate = useNavigate();
+  const downloadCv = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   useEffect(() => {
     Aos.init({ duration: 4000 });
   }, []);
@@ -74,19 +89,52 @@ function About() {
 
                 <Zoom>
                   <div className="get-in-touch-button-container">
-                    <button className="twitter-button">
+                    <button
+                      onClick={() => {
+                        window.open(
+                          "https://twitter.com/SineZwa97?t=SWBvRj7-kVc-0-8jmzNzVA&s=08 "
+                        );
+                      }}
+                      className="twitter-button"
+                    >
                       <TwitterIcon fontSize="large"></TwitterIcon>
                     </button>
-                    <button className="linked-in-button">
+                    <button
+                      onClick={() => {
+                        window.open(
+                          "https://www.linkedin.com/in/sinethemba-zwane-056292211"
+                        );
+                      }}
+                      className="linked-in-button"
+                    >
                       <LinkedInIcon fontSize="large"></LinkedInIcon>
                     </button>
-                    <button className="git-hub-button">
+                    <button
+                      onClick={() => {
+                        window.open("https://github.com/MarkOdeBeast");
+                      }}
+                      className="git-hub-button"
+                    >
                       <GitHubIcon fontSize="large"></GitHubIcon>
                     </button>
-                    <button className="ringer-button">
+                    <button
+                      onClick={() => [
+                        navigator.clipboard.writeText("+27829571804"),
+                        alert("Phone Number Copied To Clip Board"),
+                      ]}
+                      className="ringer-button"
+                    >
                       <WhatsAppIcon fontSize="large"></WhatsAppIcon>
                     </button>
-                    <button className="g-mail-button">
+                    <button
+                      onClick={() => [
+                        navigator.clipboard.writeText(
+                          "njabulosbzwane25@gmail.com"
+                        ),
+                        alert("Email Copied To Clip Board"),
+                      ]}
+                      className="g-mail-button"
+                    >
                       <EmailIcon fontSize="large"></EmailIcon>
                     </button>
                   </div>
@@ -97,7 +145,12 @@ function About() {
                   <h1 className="side-bar-header-font-light-2">DEVELOPER</h1>
                 </Zoom>
                 <Zoom>
-                  <button className="side-bar-button">
+                  <button
+                    className="side-bar-button"
+                    onClick={() => {
+                      downloadCv(MY_CV);
+                    }}
+                  >
                     <span className="side-bar-button-font-bold">
                       Download CV
                     </span>
@@ -115,7 +168,12 @@ function About() {
                   </span>
                 </Zoom>
                 <Zoom>
-                  <button className="self-study-button">
+                  <button
+                    onClick={() => {
+                      navigate("/continuous-self-study");
+                    }}
+                    className="self-study-button"
+                  >
                     <span className="qualification-button-font-bold side-bar-button-font-bold">
                       See More
                     </span>
