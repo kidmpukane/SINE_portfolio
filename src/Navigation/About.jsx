@@ -3,7 +3,7 @@ import Zoom from "react-reveal/Zoom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import profilePic from "../assets/WhatsApp Image 2023-02-25 at 21.25.52.jpg";
-
+import myCv from "../assets/Sinethemba_Zwane_Resume_26-02-2023-20-49-21.pdf";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -12,7 +12,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 import { useNavigate } from "react-router-dom";
 
-const MY_CV = "http://localhost:3000/CV_2022.pdf";
+const MY_CV = myCv;
 
 function About() {
   const navigate = useNavigate();
