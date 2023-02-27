@@ -1,19 +1,25 @@
-import React from 'react';
-import './App.css';
-import Home from './Navigation/Home';
-import About from './Navigation/About';
-import Projects from './Navigation/Projects';
-import CurrentProject from './Navigation/CurrentProject';
+import { createContext, React, useContext, useState } from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Navigation/Home";
+import About from "./Navigation/About";
+import Projects from "./Navigation/Projects";
+import SelfStudy from "./Navigation/SelfStudy";
+import NoPage from "./Navigation/NoPage";
+import TestPage from "./Navigation/TestPage";
+import ToggleSwitch from "./Navigation/ToggleSwitch";
 
 function App() {
   return (
-    <div className="App">
-    <Home />
-    <About />
-    <Projects />
-    <CurrentProject/>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about-me" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/test-page" element={<TestPage />} />
+      <Route path="/continuous-self-study" element={<SelfStudy />} />
 
-    </div>
+      <Route path="*" element={<NoPage />} />
+    </Routes>
   );
 }
 
