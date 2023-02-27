@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import Zoom from "react-reveal/Zoom";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import profilePic from "../assets/IMG_20220326_010638.jpg";
+import profilePic from "../assets/WhatsApp Image 2023-02-27 at 12.54.25.jpg";
 import myCv from "../assets/Lwandiso_Zwane_Resume_26-02-2023-21-33-59.pdf";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
