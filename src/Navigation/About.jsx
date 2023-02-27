@@ -41,10 +41,10 @@ function About() {
       links: {
         heading: "GET IN",
         headingOne: "TOUCH",
-        text: "Hi, my name is Sinethemba, I am a junior fullstack developer from South Africa, with experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development.",
+        text: "I am a junior full stack developer, life long designer, there is nothing on this earth that gives me more joy than bringing ideas into reality.I originally got into this space as a graphic designer but quickly got pulled in by the problem solving allure that is software development. The scientific method is one that I have used for years in designing and bringing it into this space was a no brainer.",
       },
       qualification: {
-        text: "I consider myself a 'forever student', eager to both and learn build on my foundations, and I stay in tune with the latest web development trends and technologies through continued coursework.",
+        text: "I enjoy working in teams especially if it means that I am learning, growing, and slowly moving closer to reaching my full potential as a developer and problem solver. Outside of practical work I am continuously progressing my skills through taking courses.",
       },
     },
   ];
@@ -92,9 +92,7 @@ function About() {
                   <div className="get-in-touch-button-container">
                     <button
                       onClick={() => {
-                        window.open(
-                          "https://twitter.com/SineZwa97?t=SWBvRj7-kVc-0-8jmzNzVA&s=08 "
-                        );
+                        window.open("https://twitter.com/n_lwandisozwane ");
                       }}
                       className="twitter-button"
                     >
@@ -103,7 +101,7 @@ function About() {
                     <button
                       onClick={() => {
                         window.open(
-                          "https://www.linkedin.com/in/sinethemba-zwane-056292211"
+                          "https://www.linkedin.com/in/lwandiso-zwane-60506a252/"
                         );
                       }}
                       className="linked-in-button"
@@ -112,7 +110,7 @@ function About() {
                     </button>
                     <button
                       onClick={() => {
-                        window.open("https://github.com/MarkOdeBeast");
+                        window.open("https://github.com/kidmpukane");
                       }}
                       className="git-hub-button"
                     >
@@ -120,7 +118,7 @@ function About() {
                     </button>
                     <button
                       onClick={() => [
-                        navigator.clipboard.writeText("+27829571804"),
+                        navigator.clipboard.writeText("+27621046213"),
                         alert("Phone Number Copied To Clip Board"),
                       ]}
                       className="ringer-button"
@@ -130,7 +128,7 @@ function About() {
                     <button
                       onClick={() => [
                         navigator.clipboard.writeText(
-                          "njabulosbzwane25@gmail.com"
+                          "lwandisozwane91@gmail.com"
                         ),
                         alert("Email Copied To Clip Board"),
                       ]}
