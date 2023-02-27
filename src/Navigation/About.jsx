@@ -41,7 +41,7 @@ function About() {
       links: {
         heading: "GET IN",
         headingOne: "TOUCH",
-        text: "Hi, my name is Sinethemba, I am a junior fullstack developer from South Africa, with experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development.",
+        text: "Hi, my name is Sinethemba, I am a fullstack developer from South Africa, with experience mostly developing front end applications. I am fueled by my passion for understanding the nuances and complexities of web development.",
       },
       qualification: {
         text: "I consider myself a 'forever student', eager to both and learn build on my foundations, and I stay in tune with the latest web development trends and technologies through continued coursework.",

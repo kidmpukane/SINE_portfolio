@@ -116,13 +116,14 @@ function Projects() {
             </h1>
             <span className="section-text inter-font-light">
               The following is a display of the of my ability to solve problem
-              by using algorithms and data structures, bellow i have include the
-              a couple of games that I have created, some using the terminal.
-              Below this block I have also included a back end MongoDB, and AWS3
-              project that is logic heavy, it's an authentication app built from
-              scratch without A0uth, complete with tokens and cookies it allows
-              users to upload photos that are then sent a cloud server and are
-              tracked using a link that is stored inside the data base.
+              by using algorithms and data structures, bellow I have included
+              the a couple of games that I have created, some using the
+              terminal. Below this block I have also included a back-end
+              MongoDB, and AWS3 project that is logic heavy, it's an
+              authentication app built from scratch without A0uth, complete with
+              tokens and cookies it allows users to upload photos that are then
+              sent a cloud server and are tracked using a link that is stored
+              inside the data base.
             </span>
           </div>
         </Zoom>
@@ -195,9 +196,9 @@ function Projects() {
             </div>
             <div className="body-text">
               <span className="dsa-body-text">
-                These are a collection a couple of algorithms that I plan to use
-                on the mk-01 project, and some that I read about and recreated
-                in Javascript for practice.
+                These are collections of a couple of algorithms that I plan to
+                use on the mk-01 project, and some that I read about and
+                recreated in Javascript for practice.
               </span>
             </div>
           </div>
@@ -223,9 +224,9 @@ function Projects() {
             </div>
             <div className="body-text">
               <span className="dsa-body-text-white">
-                These are a collection a couple of algorithms that I plan to use
-                on the mk-01 project, and some that I read about and recreated
-                in Javascript for practice.
+                These are collections of a couple of algorithms that I plan to
+                use on the mk-01 project, and some that I read about and
+                recreated in Javascript for practice.
               </span>
             </div>
           </div>
