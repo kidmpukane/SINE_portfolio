@@ -31,9 +31,7 @@ function Projects() {
                 <span className="date-style space-font">25/06/2023:</span>
                 <button
                   onClick={() => {
-                    window.open(
-                      "https://twitter.com/SineZwa97?t=SWBvRj7-kVc-0-8jmzNzVA&s=08 "
-                    );
+                    window.open("https://twitter.com/n_lwandisozwane ");
                   }}
                   className="button-top-right space-font"
                 >
