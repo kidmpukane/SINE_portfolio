@@ -34,7 +34,7 @@ function Projects() {
                 <button
                   onClick={() => {
                     window.open(
-                      "https://twitter.com/SineZwa97?t=SWBvRj7-kVc-0-8jmzNzVA&s=08 "
+                      "https://twitter.com/SineZwa97?t=SWBvRj7-kVc-0-8jmzNzVA&s=08"
                     );
                   }}
                   className="button-top-right space-font"
