@@ -294,6 +294,7 @@
   padding: 1vw;
   border-radius: 1rem;
   
+  
 }
 
 .profile-image{
@@ -334,7 +335,7 @@
       -ms-overflow-style: none;
       /* IE and Edge */
       scrollbar-width: none;
-      /* Firefox */
+      /*-- Firefox --*/
 }
 
   .get-in-touch-button-container::-webkit-scrollbar {
