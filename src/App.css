@@ -211,6 +211,9 @@
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
+  cursor: pointer;
+  
+  
 }
 
 @-webkit-keyframes shine {
@@ -220,6 +223,7 @@
   
   to {
     -webkit-mask-position: -50%;
+   
   }
 }
 
@@ -227,6 +231,8 @@
   -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
+  cursor: pointer;
+    
 }
 
 
@@ -653,14 +659,19 @@
 
   }
   
+  .current-project-heading-one{
+    font-size: 7vw;
+    
+  }
+  
   .project-heading-one{
-    font-size: 9vw;
+    font-size: 6vw;
     
   }
   
   .project-heading-two{
-    margin-top: -8vw;
-    font-size: 10vw;
+    margin-top: -6vw;
+    font-size: 7.6vw;
 
   }
 
@@ -1023,6 +1034,7 @@
       background-color: #FFFFFF;
       border-radius: 2vw;
       padding: 4vw;
+      cursor: pointer;
   
   
     }
@@ -1103,18 +1115,21 @@
       background-color: var(--custom-baby-blue);
       border-radius: 2vw;
       padding: 4vw;
+      cursor: pointer;
     }
   
     .dsa-project-three {
       background-color: var(--custom-orange);
       border-radius: 2vw;
       padding: 4vw;
+      cursor: pointer;
     }
   
     .dsa-project-four {
       background-color: var(--custom-red);
       border-radius: 2vw;
       padding: 4vw;
+      cursor: pointer;
     }
   
     .project-video-two {
@@ -1321,7 +1336,7 @@
 .second-project-grid  {
     display: grid;
     grid-template-columns: repeat(60, 1fr);
-    grid-template-rows: repeat(10, minmax(10vw, auto));
+    grid-template-rows: repeat(7, minmax(10vw, auto));
     grid-gap: 1vw;
     max-width: 94%;
     margin: 0 auto;
