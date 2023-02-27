@@ -6,22 +6,26 @@ function Home() {
 
   return (
     <div className="heading-container">
-      <h1
-        onClick={() => {
-          navigate("/about-me");
-        }}
-        className="inter-font-bold home-heading1 slideInLeft"
-      >
-        ABOUT ME!
-      </h1>
-      <h1
-        onClick={() => {
-          navigate("/projects");
-        }}
-        className="inter-font-light home-heading2 slideInRight"
-      >
-        MY PROJECTS
-      </h1>
+      <div className="slideInLeft">
+        <h1
+          onClick={() => {
+            navigate("/about-me");
+          }}
+          className="inter-font-bold home-heading1"
+        >
+          ABOUT ME!
+        </h1>
+      </div>
+      <div className="slideInRight">
+        <h1
+          onClick={() => {
+            navigate("/projects");
+          }}
+          className="inter-font-light home-heading2"
+        >
+          MY PROJECTS
+        </h1>
+      </div>
     </div>
   );
 }

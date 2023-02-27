@@ -11,7 +11,9 @@ function Projects() {
       <div className="project-grid-container">
         <Zoom>
           <div className="current-project">
-            <h1 className="inter-font-bold project-heading-one">CURRENT</h1>
+            <h1 className="inter-font-bold current-project-heading-one">
+              CURRENT
+            </h1>
             <h1 className="inter-font-light project-heading-two">PROJECT</h1>
           </div>
         </Zoom>
