@@ -3,7 +3,7 @@ import Zoom from "react-reveal/Zoom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import profilePic from "../assets/WhatsApp Image 2023-02-25 at 21.25.52.jpg";
-import myCv from "../assets/Sinethemba_Zwane_Resume_26-02-2023-20-49-21.pdf";
+import myCv from "../assets/Sinethemba_Zwane_Resume_Update.pdf";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
