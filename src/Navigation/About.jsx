@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import Zoom from "react-reveal/Zoom";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import profilePic from "../assets/WhatsApp Image 2023-02-27 at 12.54.25.jpg";
+import profilePic from "../assets/IMG_20231217_193834_068.jpg";
 import myCv from "../assets/Lwandiso_Zwane_Resume_New.pdf";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -41,7 +41,7 @@ function About() {
       links: {
         heading: "GET IN",
         headingOne: "TOUCH",
-        text: "I am a junior full stack developer, life long designer, there is nothing on this earth that gives me more joy than bringing ideas into reality.I originally got into this space as a graphic designer but quickly got pulled in by the problem solving allure that is software development. The scientific method is one that I have used for years in designing and bringing it into this space was a no brainer.",
+        text: "I am a software developer and lifelong designer who recently transitioned into the role of a machine learning engineer. For me, there's no greater joy than bringing ideas to life. My journey began in graphic design, but I quickly found myself captivated by the problem-solving realm of software development. Throughout my years as a designer, I extensively utilised the scientific method, making its integration into this field a seamless progression.",
       },
       qualification: {
         text: "I enjoy working in teams especially if it means that I am learning, growing, and slowly moving closer to reaching my full potential as a developer and problem solver. Outside of practical work I am continuously progressing my skills through taking courses.",
